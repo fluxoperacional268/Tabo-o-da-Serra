@@ -37,7 +37,8 @@
       --solid-bg: #00049E;
       --solid-ink: #FFFFFF;
     }
-      .step-imgs img {
+
+    .step-imgs img {
       height: 125px;
       width: auto;
       max-width: 100%;
@@ -49,13 +50,15 @@
       box-shadow: var(--shadow);
       transition: transform .15s;
     }
-.step-imgs {
+
+    .step-imgs {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
       margin-top: 10px;
     }
-.step-imgs img.tall {
+
+    .step-imgs img.tall {
       height: 250px;
     }
 
@@ -602,7 +605,7 @@
       margin-top: 10px;
     }
 
-  
+
 
     .step-imgs img:hover {
       transform: translateY(-2px);
@@ -840,6 +843,21 @@
         grid-template-columns: 1fr;
       }
     }
+
+
+    /* ---------- Fluxo interno ---------- */
+    .internal-flow {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      cursor: zoom-in;
+      background: #fff;
+    }
   </style>
 </head>
 
@@ -863,6 +881,7 @@
       <div class="rail-group-label">Início</div>
       <button class="tab active" data-tab="overview"><span class="ico">🧭</span>Visão geral</button>
       <button class="tab" data-tab="contatos"><span class="ico">📇</span>Contatos</button>
+      <button class="tab" data-tab="fluxo"><span class="ico">🔀</span>Fluxo Interno</button>
 
       <div class="rail-group-label">Prefeitura</div>
       <button class="tab" data-tab="prefeitura"><span class="ico">🏛️</span>Rede · Ramal · Manutenção</button>
@@ -1005,7 +1024,8 @@
           <p class="sub">Procedimento de encerramento de obras em Taboão da Serra (Contrato BI268 · Comgás · RMSP)</p>
         </div>
         <div class="attention"><span>⚠️</span>
-          <div><b>Ponto-chave:</b> Taboão da Serra não emite CCO (Certificado de Conclusão de Obra). O encerramento é comprovado pelo protocolo de encerramento e pelo arquivamento da documentação.</div>
+          <div><b>Ponto-chave:</b> Taboão da Serra não emite CCO (Certificado de Conclusão de Obra). O encerramento é
+            comprovado pelo protocolo de encerramento e pelo arquivamento da documentação.</div>
         </div>
         <div class="card">
           <h3 style="font-size:15px;color:var(--navy);margin-bottom:12px">1. Onde e como protocolar</h3>
@@ -1029,7 +1049,8 @@
                 <tr>
                   <td>Contato</td>
                   <td>Atende / Protocolo: (11) 4788-2922 · Levi - Engenheiro - Secretaria de Obras: <a
-                      href="mailto:levi.alves@taboaodaserra.sp.gov.br">levi.alves@taboaodaserra.sp.gov.br</a> · (11) 92001-4763</td>
+                      href="mailto:levi.alves@taboaodaserra.sp.gov.br">levi.alves@taboaodaserra.sp.gov.br</a> · (11)
+                    92001-4763</td>
                 </tr>
                 <tr>
                 </tr>
@@ -1064,11 +1085,10 @@
                 contratada e Comgás <span style="color:var(--muted);font-size:11px">· 1 VIA</span></label></li>
             <li><input type="checkbox" id="enc-rede-4"><label for="enc-rede-4">Autorização <span
                   style="color:var(--muted);font-size:11px">· 1 VIA</span></label></li>
-                  <div class="step-imgs"><img class="tall"
-                    src="nathan/DOCUMENTAÇÃO - REDE.png"
-                    alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta requerimento.</div>
-                </ul>
+            <div class="step-imgs"><img class="tall" src="nathan/DOCUMENTAÇÃO - REDE.png"
+                alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
+            <div class="fig-caption">Modelo de carta requerimento.</div>
+          </ul>
         </div>
         <div class="card" data-enc-list="enc-ramal">
           <div class="checklist-head">
@@ -1088,11 +1108,10 @@
                 contratada <span style="color:var(--muted);font-size:11px">· 1 VIA</span></label></li>
             <li><input type="checkbox" id="enc-ramal-2"><label for="enc-ramal-2">Cronograma de obras (executados e não
                 executados) <span style="color:var(--muted);font-size:11px">· 1 VIA</span></label></li>
-              <div class="step-imgs"><img class="tall"
-                    src="nathan/DOCUMENTAÇÃO - RAMAL E MANUTENÇÃO.png"
-                    alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta requerimento.</div>
-              </ul>
+            <div class="step-imgs"><img class="tall" src="nathan/DOCUMENTAÇÃO - RAMAL E MANUTENÇÃO.png"
+                alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
+            <div class="fig-caption">Modelo de carta requerimento.</div>
+          </ul>
         </div>
         <div class="card" data-enc-list="enc-manut">
           <div class="checklist-head">
@@ -1110,10 +1129,9 @@
                   style="color:var(--muted);font-size:11px">· 2 VIAS</span></label></li>
             <li><input type="checkbox" id="enc-manut-1"><label for="enc-manut-1">Relatório fotográfico assinado pela
                 contratada <span style="color:var(--muted);font-size:11px">· 1 VIA</span></label></li>
-                <div class="step-imgs"><img class="tall"
-                    src="nathan/DOCUMENTAÇÃO - RAMAL E MANUTENÇÃO.png"
-                    alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                <div class="fig-caption">Modelo de carta requerimento.</div>
+            <div class="step-imgs"><img class="tall" src="nathan/DOCUMENTAÇÃO - RAMAL E MANUTENÇÃO.png"
+                alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
+            <div class="fig-caption">Modelo de carta requerimento.</div>
           </ul>
         </div>
         <div class="card">
@@ -1141,7 +1159,9 @@
               <div class="step-line"></div>
               <div class="step-body">
                 <h4>Conferência</h4>
-                <p>Conferir documentos obrigatórios, dados, legibilidade e assinaturas conforme a <a href="https://comgas.docnix.com.br/comgas/corporate/index.html#/login" target="_blank">IN 529</a>. Se houver
+                <p>Conferir documentos obrigatórios, dados, legibilidade e assinaturas conforme a <a
+                    href="https://comgas.docnix.com.br/comgas/corporate/index.html#/login" target="_blank">IN 529</a>.
+                  Se houver
                   pendências, devolver pelo mesmo canal e solicitar correções.</p>
               </div>
             </div>
@@ -1151,8 +1171,7 @@
               <div class="step-body">
                 <h4>Protocolo</h4>
                 <p>Realizar protocolo digital pelo e-mail: atende@taboaodaserra.sp.gov.br.</p>
-              <div class="step-imgs"><img class="tall"
-                    src="nathan/PROTOCOLO.png"
+                <div class="step-imgs"><img class="tall" src="nathan/PROTOCOLO.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
                 <div class="fig-caption">Modelo de protocolo.</div>
               </div>
@@ -1164,8 +1183,7 @@
                 <h4>Comunique-se</h4>
                 <p>Encaminhar a solicitação de correção à contratada, definir prazo, validar a devolutiva e responder à
                   Prefeitura por ofício de atendimento.</p>
-                  <div class="step-imgs"><img class="tall"
-                    src="nathan/COMUNIQUE-SE.png"
+                <div class="step-imgs"><img class="tall" src="nathan/COMUNIQUE-SE.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
                 <div class="fig-caption">Modelo de comunique-se.</div>
               </div>
@@ -1175,11 +1193,12 @@
               <div class="step-line"></div>
               <div class="step-body">
                 <h4>Conclusão</h4>
-                <p>Após o protocolo, atualizar o status para “Processo Encerrado” na planilha de governança. Fulcrum, atualizar com todas as documentações recebidas e comprovante de protocolo. No Lecom, avançar com o comprovante de protocolo. Conferir que tudo foi registrado antes de avançar o status.</p>
-              <div class="step-imgs"><img class="tall"
-                    src="nathan/PROCESSO ENCERRADO.png"
+                <p>Após o protocolo, atualizar o status para “Processo Encerrado” na planilha de governança. No <b>Fulcrum</b>,
+                  atualizar com todas as documentações recebidas e comprovante de protocolo. No <b>Lecom</b>, avançar com o
+                  comprovante de protocolo. Conferir se tudo foi registrado antes de avançar o status.</p>
+                <div class="step-imgs"><img class="tall" src="nathan/PROCESSO ENCERRADO.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
-                
+
               </div>
             </div>
             <div class="step">
@@ -1188,8 +1207,7 @@
                 <h4>Arquivamento</h4>
                 <p>Arquivar a documentação e digitalizar a Carta de Requerimento assinada pela Prefeitura para anexá-la
                   aos sistemas.</p>
-                  <div class="step-imgs"><img class="tall"
-                    src="nathan/CANCELAMENTO.png"
+                <div class="step-imgs"><img class="tall" src="nathan/CANCELAMENTO.png"
                     alt="Figura 8 — Modelo de autorização do Demutran para ramais"></div>
                 <div class="fig-caption">Modelo de cancelamento.</div>
               </div>
@@ -1220,7 +1238,12 @@
         <div class="card">
           <h3 style="font-size:15px;color:var(--navy);margin-bottom:10px">Atenção</h3>
           <ul class="checklist">
-            <li style="border:none">Taboão da Serra não emite CCO. A obra é considerada encerrada pelo protocolo de encerramento e pelo arquivamento da documentação.</li>
+            <li style="border:none">Os modelos de carta de requerimento para encerramento de obras podem ser acessados por meio do link:
+              <a href="https://bureauveritas.sharepoint.com/teams/BI268-COMGSAutorizaeseLicenas/Documents%20partages/Forms/AllItems.aspx?d=w0fb83b45409c476cbcb9e69f51c0c285&csf=1&web=1&e=hQsM27&ovuser=fffad414%2Db6a3%2D4f32%2Da9bd%2D42d28fc811f1%2Cnathan%2Epereira%40bureauveritas%2Ecom&TeamsCID=060d71bc%2D3a6c%2D4585%2D9aa7%2D64d1713edb32&OR=Teams%2DHL&CT=1793361806097&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtV2ViIiwiQXBwVmVyc2lvbiI6IjE0MTUvMjYxMDAyMTIwMTgiLCJIYXNGZWRlcmF0ZWRVc2VyIjpmYWxzZX0%3D&CID=e4ed49a2%2D7015%2D3001%2Dbcbb%2Da713b7afc0c1&cidOR=SPO&FolderCTID=0x0120008E1434D1185CC340879FC7AED7D7265C&id=%2Fteams%2FBI268%2DCOMGSAutorizaeseLicenas%2FDocuments%20partages%2F07%20%2D%20OPERA%C3%87%C3%83O%2F01%2E%20Planejamento%20e%20Controle%2F09%2E%20Modelo%20Cartas%2F03%2E%20MODELO%20CARTA%20ENCE%2F02%2E%20RMSP"> 02. RMSP</a></li>
+            <li style="border:none">
+        
+               Taboão da Serra não emite CCO. A obra é considerada encerrada pelo protocolo de
+              encerramento e pelo arquivamento da documentação.</li>
             <li style="border:none">Cancelamento/arquivamento deve ocorrer antes de eventual protocolo no órgão público:
               elaborar carta com justificativa, protocolar por e-mail e registrar nos sistemas BV e Comgás.</li>
             <li style="border:none">Registrar todos os envios e respostas nos sistemas internos e manter a Base de
@@ -1246,6 +1269,18 @@
             <li><input type="checkbox" id="cancel-doc"><label for="cancel-doc">Autorização (caso já tenha sido liberada)
                 (DIGITAL)</label></li>
           </ul>
+        </div>
+      </section>
+
+      <!-- ================= FLUXO INTERNO ================= -->
+      <section class="page" id="page-fluxo">
+        <div class="page-head">
+          <div class="kicker">FLUXO INTERNO</div>
+          <h2>Autorização para Obras em Via Pública</h2>
+        </div>
+        <div class="card">
+          <img alt="Fluxo de Autorização para Obras em Via Pública — Fluxo interno" class="internal-flow"
+            src="nathan/Taboão da Serra.png">
         </div>
       </section>
 
@@ -1408,6 +1443,9 @@
         document.getElementById('lightboxImg').src = src;
         lb.classList.add('open');
       }
+      document.querySelectorAll('.internal-flow').forEach(img => {
+        img.addEventListener('click', () => openLightbox(img.src));
+      });
 
       function renderPills(containerId, keys, labels, onSelect, activeKey) {
         const el = document.getElementById(containerId);
